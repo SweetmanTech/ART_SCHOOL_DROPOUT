@@ -1,6 +1,7 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import EthereumCard from '../components/EthereumCard';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
@@ -43,10 +44,7 @@ const Home: NextPage = () => {
               <p>Starting with the <code className={styles.code}>components/SolanaCard</code> to get started</p>
             </a>
 
-            <a href="#" className="py-10 px-3 border rounded-lg border-black">
-              <div className="text-2xl">Ethereum</div>
-              <p>Starting with the <code className={styles.code}>components/SolanaCard</code> to get started</p>
-            </a>
+            <EthereumCard />
         </div>
       </main>
     </div>
